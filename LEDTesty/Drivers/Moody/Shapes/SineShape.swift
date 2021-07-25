@@ -7,14 +7,8 @@
 
 import Foundation
 
-struct SineShape: MoodyEffect {
-	var leds: [RGB]
-	
-	func update(time: Double) {
-		leds.enumerated().forEach { i, led in
-			led.r = sin(Double(i) / Double(leds.count) * 2 * .pi + time)
-			led.g = -led.r
-			led.b = 0
-		}
+struct SineShape: MoodyShape {
+	func sample(at x: Double) -> Double {
+		sin(Double(x) * 2 * .pi)
 	}
 }

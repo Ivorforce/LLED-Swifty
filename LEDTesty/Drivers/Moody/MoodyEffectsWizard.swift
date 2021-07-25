@@ -11,6 +11,6 @@ class MoodyEffectsWizard {
 	static func shape(for driver: DriverMoody) -> MoodyEffect {
 		let leds = driver.leds
 		
-		return SineShape(leds: leds)
+		return ShapeDrawer(shape: SineShape(), leds: leds)
 	}
 }
