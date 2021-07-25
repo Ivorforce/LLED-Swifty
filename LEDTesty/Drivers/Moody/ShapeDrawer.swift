@@ -11,11 +11,15 @@ struct ShapeDrawer: MoodyEffect {
 	var leds: [RGB]
 
 	var shape: MoodyShape
+	var shapeEffects: [MoodyShape] = []
 		
 	func update(time: Double) {
 		leds.enumerated().forEach { i, led in
 			let x = Double(i) / Double(leds.count) + time
-			let value = shape.sample(at: x)
+			var value = shape.sample(at: x)
+			for shape in shapeEffects {
+				value = shape.sample(at: value)
+			}
 			
 			led.r = value
 			led.g = -value

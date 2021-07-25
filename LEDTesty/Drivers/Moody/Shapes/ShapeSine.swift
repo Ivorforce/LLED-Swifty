@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SineShape: MoodyShape {
+struct ShapeSine: MoodyShape {
 	func sample(at x: Double) -> Double {
 		sin(Double(x) * 2 * .pi)
 	}

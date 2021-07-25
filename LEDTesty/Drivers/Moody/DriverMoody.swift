@@ -21,7 +21,7 @@ class DriverMoody: Driver {
 	}
 	
 	func update(date: Date, delta: TimeInterval) {
-		let time = date.timeIntervalSinceReferenceDate
+		let time = date.timeIntervalSinceReferenceDate / 4
 		
 		baseShape.update(time: time)
 		effect.update(time: time)
