@@ -16,6 +16,8 @@
 		8008C4B826AD9B89005706B3 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4B726AD9B89005706B3 /* RGB.swift */; };
 		8008C4BA26AD9C71005706B3 /* RGB+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4B926AD9C71005706B3 /* RGB+View.swift */; };
 		8008C4BF26AD9D1B005706B3 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4BE26AD9D1B005706B3 /* Angle.swift */; };
+		8008C4C226ADA5E5005706B3 /* DriverSine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4C126ADA5E5005706B3 /* DriverSine.swift */; };
+		8008C4C426ADA690005706B3 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4C326ADA690005706B3 /* Driver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		8008C4B726AD9B89005706B3 /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
 		8008C4B926AD9C71005706B3 /* RGB+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RGB+View.swift"; sourceTree = "<group>"; };
 		8008C4BE26AD9D1B005706B3 /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
+		8008C4C126ADA5E5005706B3 /* DriverSine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverSine.swift; sourceTree = "<group>"; };
+		8008C4C326ADA690005706B3 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,8 @@
 			children = (
 				8008C4A126AD9AD9005706B3 /* LEDTestyApp.swift */,
 				8008C4A326AD9AD9005706B3 /* ContentView.swift */,
-				8008C4B126AD9AF6005706B3 /* Logic */,
+				8008C4B126AD9AF6005706B3 /* Screen Logic */,
+				8008C4C026ADA5D2005706B3 /* Drivers */,
 				8008C4B226AD9AFD005706B3 /* Views */,
 				8008C4A526AD9ADA005706B3 /* Assets.xcassets */,
 				8008C4AA26AD9ADA005706B3 /* Info.plist */,
@@ -83,13 +88,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8008C4B126AD9AF6005706B3 /* Logic */ = {
+		8008C4B126AD9AF6005706B3 /* Screen Logic */ = {
 			isa = PBXGroup;
 			children = (
 				8008C4B726AD9B89005706B3 /* RGB.swift */,
 				8008C4B526AD9B37005706B3 /* LEDScreen1D.swift */,
 			);
-			path = Logic;
+			path = "Screen Logic";
 			sourceTree = "<group>";
 		};
 		8008C4B226AD9AFD005706B3 /* Views */ = {
@@ -108,6 +113,15 @@
 				8008C4BE26AD9D1B005706B3 /* Angle.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		8008C4C026ADA5D2005706B3 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				8008C4C326ADA690005706B3 /* Driver.swift */,
+				8008C4C126ADA5E5005706B3 /* DriverSine.swift */,
+			);
+			path = Drivers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,8 @@
 				8008C4B626AD9B37005706B3 /* LEDScreen1D.swift in Sources */,
 				8008C4BF26AD9D1B005706B3 /* Angle.swift in Sources */,
 				8008C4BA26AD9C71005706B3 /* RGB+View.swift in Sources */,
+				8008C4C426ADA690005706B3 /* Driver.swift in Sources */,
+				8008C4C226ADA5E5005706B3 /* DriverSine.swift in Sources */,
 				8008C4A226AD9AD9005706B3 /* LEDTestyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

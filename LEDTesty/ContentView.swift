@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-		CircularLEDView(screen: LEDScreen1D(ledCount: 50, fps: 30), mirrors: 10)
+		CircularLEDView(screen: LEDScreen1D(ledCount: 50, driver: DriverSine(), fps: 30), mirrors: 10)
 			.frame(minWidth: 200, minHeight: 200)
 			.aspectRatio(contentMode: .fit)
     }

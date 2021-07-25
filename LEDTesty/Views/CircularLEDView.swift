@@ -60,6 +60,6 @@ struct CircularLEDView: View {
 
 struct CircularLEDView_Previews: PreviewProvider {
     static var previews: some View {
-		CircularLEDView(screen: LEDScreen1D(ledCount: 50), mirrors: 3)
+		CircularLEDView(screen: LEDScreen1D(ledCount: 50, driver: DriverSine()), mirrors: 3)
     }
 }
