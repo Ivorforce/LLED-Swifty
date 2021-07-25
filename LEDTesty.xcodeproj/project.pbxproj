@@ -18,6 +18,10 @@
 		8008C4BF26AD9D1B005706B3 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4BE26AD9D1B005706B3 /* Angle.swift */; };
 		8008C4C226ADA5E5005706B3 /* DriverSine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4C126ADA5E5005706B3 /* DriverSine.swift */; };
 		8008C4C426ADA690005706B3 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4C326ADA690005706B3 /* Driver.swift */; };
+		8008C4C826ADC644005706B3 /* DriverMoody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4C726ADC644005706B3 /* DriverMoody.swift */; };
+		8008C4CF26ADC684005706B3 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4CE26ADC684005706B3 /* Effect.swift */; };
+		8008C4D126ADC7FC005706B3 /* SineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4D026ADC7FC005706B3 /* SineShape.swift */; };
+		8008C4D626ADCBA6005706B3 /* MoodyEffectsWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4D526ADCBA6005706B3 /* MoodyEffectsWizard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		8008C4BE26AD9D1B005706B3 /* Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		8008C4C126ADA5E5005706B3 /* DriverSine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverSine.swift; sourceTree = "<group>"; };
 		8008C4C326ADA690005706B3 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		8008C4C726ADC644005706B3 /* DriverMoody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverMoody.swift; sourceTree = "<group>"; };
+		8008C4CE26ADC684005706B3 /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		8008C4D026ADC7FC005706B3 /* SineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineShape.swift; sourceTree = "<group>"; };
+		8008C4D526ADCBA6005706B3 /* MoodyEffectsWizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyEffectsWizard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +128,28 @@
 			children = (
 				8008C4C326ADA690005706B3 /* Driver.swift */,
 				8008C4C126ADA5E5005706B3 /* DriverSine.swift */,
+				8008C4C926ADC65A005706B3 /* Moody */,
 			);
 			path = Drivers;
+			sourceTree = "<group>";
+		};
+		8008C4C926ADC65A005706B3 /* Moody */ = {
+			isa = PBXGroup;
+			children = (
+				8008C4C726ADC644005706B3 /* DriverMoody.swift */,
+				8008C4D526ADCBA6005706B3 /* MoodyEffectsWizard.swift */,
+				8008C4CE26ADC684005706B3 /* Effect.swift */,
+				8008C4CA26ADC662005706B3 /* Shapes */,
+			);
+			path = Moody;
+			sourceTree = "<group>";
+		};
+		8008C4CA26ADC662005706B3 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				8008C4D026ADC7FC005706B3 /* SineShape.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +221,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8008C4CF26ADC684005706B3 /* Effect.swift in Sources */,
 				8008C4B826AD9B89005706B3 /* RGB.swift in Sources */,
 				8008C4A426AD9AD9005706B3 /* ContentView.swift in Sources */,
 				8008C4B426AD9B11005706B3 /* CircularLEDView.swift in Sources */,
 				8008C4B626AD9B37005706B3 /* LEDScreen1D.swift in Sources */,
+				8008C4C826ADC644005706B3 /* DriverMoody.swift in Sources */,
 				8008C4BF26AD9D1B005706B3 /* Angle.swift in Sources */,
 				8008C4BA26AD9C71005706B3 /* RGB+View.swift in Sources */,
 				8008C4C426ADA690005706B3 /* Driver.swift in Sources */,
+				8008C4D626ADCBA6005706B3 /* MoodyEffectsWizard.swift in Sources */,
+				8008C4D126ADC7FC005706B3 /* SineShape.swift in Sources */,
 				8008C4C226ADA5E5005706B3 /* DriverSine.swift in Sources */,
 				8008C4A226AD9AD9005706B3 /* LEDTestyApp.swift in Sources */,
 			);

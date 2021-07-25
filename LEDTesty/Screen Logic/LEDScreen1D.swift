@@ -14,13 +14,13 @@ class LEDScreen1D: ObservableObject {
 	var lastUpdate: Date
 	var timer: Timer?
 	
-	init(ledCount: Int, driver: Driver, fps: Double? = nil) {
+	init(ledCount: Int, fps: Double? = nil) {
 		leds = (0..<ledCount).map { _ in
 			RGB.random()
 		}
 		
-		self.driver = driver
 		lastUpdate = Date()
+		driver = DriverSine(leds: leds)
 		
 		if let fps = fps {
 			timer = Timer.scheduledTimer(withTimeInterval: 1 / fps, repeats: true) { [weak self] timer in
@@ -28,9 +28,6 @@ class LEDScreen1D: ObservableObject {
 			}
 			timer?.tolerance = 1 / fps * 0.1
 		}
-		
-		self.driver.screen = self
-		self.driver.update(date: Date(), delta: 0)
 	}
 	
 	func update() {

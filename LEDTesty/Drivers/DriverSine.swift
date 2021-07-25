@@ -7,14 +7,12 @@
 
 import Foundation
 
-class DriverSine: Driver {
-	weak var screen: LEDScreen1D? = nil
+struct DriverSine: Driver {
+	let leds: [RGB]
 
 	func update(date: Date, delta: TimeInterval) {
-		guard let screen = screen else { return }
-		
-		screen.leds.enumerated().forEach { i, led in
-			led.r = sin(Double(i) / Double(screen.leds.count) * 2 * .pi + date.timeIntervalSinceReferenceDate)
+		leds.enumerated().forEach { i, led in
+			led.r = sin(Double(i) / Double(leds.count) * 2 * .pi + date.timeIntervalSinceReferenceDate)
 			led.g = -led.r
 			led.b = 0
 		}

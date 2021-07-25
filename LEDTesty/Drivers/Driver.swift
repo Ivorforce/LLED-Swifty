@@ -8,7 +8,5 @@
 import Foundation
 
 protocol Driver {
-	var screen: LEDScreen1D? { get set }
-	
 	func update(date: Date, delta: TimeInterval)
 }
