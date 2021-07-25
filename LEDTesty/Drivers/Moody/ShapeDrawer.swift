@@ -15,7 +15,7 @@ struct ShapeDrawer: MoodyEffect {
 		
 	func update(time: Double) {
 		leds.enumerated().forEach { i, led in
-			let x = Double(i) / Double(leds.count) + time
+			let x = (Double(i) / Double(leds.count) - 1) * 2 + time
 			var value = shape.sample(at: x)
 			for shape in shapeEffects {
 				value = shape.sample(at: value)

@@ -26,6 +26,7 @@
 		8008C4DA26ADD140005706B3 /* ShapeDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4D926ADD140005706B3 /* ShapeDrawer.swift */; };
 		8008C4DC26ADD2B6005706B3 /* MotionBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4DB26ADD2B6005706B3 /* MotionBlur.swift */; };
 		8008C4DE26ADD4CE005706B3 /* ShapeSubdivide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4DD26ADD4CE005706B3 /* ShapeSubdivide.swift */; };
+		8008C4E026ADD7D0005706B3 /* ShapeRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4DF26ADD7D0005706B3 /* ShapeRound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		8008C4D926ADD140005706B3 /* ShapeDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDrawer.swift; sourceTree = "<group>"; };
 		8008C4DB26ADD2B6005706B3 /* MotionBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBlur.swift; sourceTree = "<group>"; };
 		8008C4DD26ADD4CE005706B3 /* ShapeSubdivide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeSubdivide.swift; sourceTree = "<group>"; };
+		8008C4DF26ADD7D0005706B3 /* ShapeRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeRound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				8008C4D726ADD0E1005706B3 /* Shape.swift */,
 				8008C4D026ADC7FC005706B3 /* ShapeSine.swift */,
 				8008C4DD26ADD4CE005706B3 /* ShapeSubdivide.swift */,
+				8008C4DF26ADD7D0005706B3 /* ShapeRound.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				8008C4CF26ADC684005706B3 /* Effect.swift in Sources */,
 				8008C4B826AD9B89005706B3 /* RGB.swift in Sources */,
+				8008C4E026ADD7D0005706B3 /* ShapeRound.swift in Sources */,
 				8008C4DA26ADD140005706B3 /* ShapeDrawer.swift in Sources */,
 				8008C4A426AD9AD9005706B3 /* ContentView.swift in Sources */,
 				8008C4B426AD9B11005706B3 /* CircularLEDView.swift in Sources */,
