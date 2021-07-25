@@ -8,14 +8,8 @@
 import Foundation
 
 class MoodyEffectsWizard {
-	static func shape(for driver: DriverMoody) -> MoodyEffect {
-		let leds = driver.leds
-		
-		return ShapeDrawer(
-			leds: leds,
-			shape: ShapeSubdivide(divisions: 4),
-			shapeEffects: [ShapeSine()]
-		)
+	static func shape(for driver: DriverMoody) -> [MoodyShape] {
+		return [ShapeSubdivide(divisions: 3), ShapeSine()]
 	}
 	
 	static func effect(for driver: DriverMoody) -> MoodyEffect {

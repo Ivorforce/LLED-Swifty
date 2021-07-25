@@ -8,22 +8,28 @@
 import Foundation
 
 class DriverMoody: Driver {
-	var leds: [RGB]
+	let leds: [RGB]
 
-	var baseShape: MoodyEffect!
+	var shape: [MoodyShape] = []
+	var colorExploder: ColorExploderRedGreen
 	var effect: MoodyEffect!
 
 	init(leds: [RGB]) {
 		self.leds = leds
 		
-		self.baseShape = MoodyEffectsWizard.shape(for: self)
+		self.colorExploder = ColorExploderRedGreen(leds: leds)
+		self.shape = MoodyEffectsWizard.shape(for: self)
 		self.effect = MoodyEffectsWizard.effect(for: self)
 	}
 	
 	func update(date: Date, delta: TimeInterval) {
 		let time = date.timeIntervalSinceReferenceDate / 4
 		
-		baseShape.update(time: time)
+		var values = Double.linspace(from: -1 + time, to: 1 + time, count: leds.count)
+		for shape in shape {
+			values = values.map(shape.sample)
+		}
+		colorExploder.explode(values)
 		effect.update(time: time)
 	}
 }
