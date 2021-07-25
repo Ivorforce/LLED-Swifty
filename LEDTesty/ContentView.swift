@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+		CircularLEDView(screen: LEDScreen1D(ledCount: 50, fps: 30), mirrors: 10)
+			.frame(minWidth: 200, minHeight: 200)
+			.aspectRatio(contentMode: .fit)
     }
 }
 
