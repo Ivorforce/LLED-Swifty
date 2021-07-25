@@ -8,10 +8,10 @@
 import Foundation
 
 struct ShapeDrawer: MoodyEffect {
-	var shape: MoodyShape
-	
 	var leds: [RGB]
-	
+
+	var shape: MoodyShape
+		
 	func update(time: Double) {
 		leds.enumerated().forEach { i, led in
 			let x = Double(i) / Double(leds.count) + time

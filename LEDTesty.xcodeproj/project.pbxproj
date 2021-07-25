@@ -24,6 +24,7 @@
 		8008C4D626ADCBA6005706B3 /* MoodyEffectsWizard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4D526ADCBA6005706B3 /* MoodyEffectsWizard.swift */; };
 		8008C4D826ADD0E1005706B3 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4D726ADD0E1005706B3 /* Shape.swift */; };
 		8008C4DA26ADD140005706B3 /* ShapeDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4D926ADD140005706B3 /* ShapeDrawer.swift */; };
+		8008C4DC26ADD2B6005706B3 /* MotionBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8008C4DB26ADD2B6005706B3 /* MotionBlur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		8008C4D526ADCBA6005706B3 /* MoodyEffectsWizard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyEffectsWizard.swift; sourceTree = "<group>"; };
 		8008C4D726ADD0E1005706B3 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		8008C4D926ADD140005706B3 /* ShapeDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDrawer.swift; sourceTree = "<group>"; };
+		8008C4DB26ADD2B6005706B3 /* MotionBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBlur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				8008C4D526ADCBA6005706B3 /* MoodyEffectsWizard.swift */,
 				8008C4CE26ADC684005706B3 /* Effect.swift */,
 				8008C4D926ADD140005706B3 /* ShapeDrawer.swift */,
+				8008C4DB26ADD2B6005706B3 /* MotionBlur.swift */,
 				8008C4CA26ADC662005706B3 /* Shapes */,
 			);
 			path = Moody;
@@ -233,6 +236,7 @@
 				8008C4A426AD9AD9005706B3 /* ContentView.swift in Sources */,
 				8008C4B426AD9B11005706B3 /* CircularLEDView.swift in Sources */,
 				8008C4B626AD9B37005706B3 /* LEDScreen1D.swift in Sources */,
+				8008C4DC26ADD2B6005706B3 /* MotionBlur.swift in Sources */,
 				8008C4C826ADC644005706B3 /* DriverMoody.swift in Sources */,
 				8008C4BF26AD9D1B005706B3 /* Angle.swift in Sources */,
 				8008C4BA26AD9C71005706B3 /* RGB+View.swift in Sources */,
